@@ -34,6 +34,10 @@ Start the development server:
 <p>ng serve</p>
 <p>Then open "http://localhost:4200" in your browser to view the app.</p>
 
+## Live demo: 
+
+<a href="https://elevate-task-1.web.app" target="_blank" >Product Gallery</a>
+
 
 ## Further help
 
