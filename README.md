@@ -1,26 +1,39 @@
-# ElevateTask
+# Product gallery (elevate's task)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+The Product Gallery displays a list of products fetched from an API. Each product shows info like image, title, short description and price. Users can search for products by name, and clicking on a product navigates to a detailed product page.
 
-## Development server
+## Running Locally
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# 1. Prerequisites
 
-## Code scaffolding
+<p>Make sure you have:</p>
+<ul>
+  <li>
+    <a href="https://nodejs.org" target="_blank">Node Js.</a> (v12 or later).
+  </li>
+  <li>
+    <a href="https://angular.dev/tools/cli" target="_blank">Angular CLI</a>
+  </li>
+</ul>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 2. Clone the Repo
 
-## Build
+you can clone the repository by coppying this code:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<p> https://github.com/Islam-13/elevate-task.git </p>
 
-## Running unit tests
+# 3. Install Dependencies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navigate to the project folder and install dependencies:
+<p>npm install</p>
 
-## Running end-to-end tests
+# 4. Run the App
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Start the development server:
+<p>ng serve</p>
+<p>Then open http://localhost:4200 in your browser to view the app.</p>
+
 
 ## Further help
 
