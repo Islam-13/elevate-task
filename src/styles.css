@@ -34,12 +34,6 @@ a {
   text-decoration: none;
 }
 
-.wrapper {
-  inline-size: min(1240px, 92%);
-  margin-inline: auto;
-  padding: 1.25rem 3rem;
-}
-
 .loader {
   width: 45px;
   aspect-ratio: 0.75;
