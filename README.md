@@ -32,7 +32,7 @@ Navigate to the project folder and install dependencies:
 
 Start the development server:
 <p>ng serve</p>
-<p>Then open http://localhost:4200 in your browser to view the app.</p>
+<p>Then open "http://localhost:4200" in your browser to view the app.</p>
 
 
 ## Further help
