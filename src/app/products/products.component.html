@@ -1,0 +1,31 @@
+<section>
+  <main>
+    @if (isFetching() && !error()) {
+    <app-loader />
+    } @if (error()) {
+    <p class="error-alert">{{ error() }}</p>
+    } @if (filteredProducts()) {
+    <form class="w-[min(650px,90%)] mx-auto py-8">
+      <input
+        class="w-full px-6 py-4 rounded-full text-xl border border-stone-400 focus:outline-none focus:ring focus:ring-yellow-300 focus:ring-offset-2"
+        type="search"
+        placeholder="What are you looking for?"
+        name="searchQuery"
+        id=""
+        [(ngModel)]="searchQuery"
+        (input)="onSearch()"
+      />
+    </form>
+
+    <div class="wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      @for (item of filteredProducts(); track item.id) {
+      <app-product [product]="item" />
+      } @empty {
+      <p class="error-alert col-span-3">
+        No products for query "{{ searchQuery() }}"
+      </p>
+      }
+    </div>
+    }
+  </main>
+</section>

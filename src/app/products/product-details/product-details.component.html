@@ -1,0 +1,36 @@
+@if (isFetching() && !error()) {
+<app-loader />
+} @if (error()) {
+<p class="error-alert">{{ error() }}</p>
+} @if (productDetails()) {
+<main class="my-16 py-8 wrapper">
+  <div class="flex flex-col gap-9">
+    <div class="flex flex-col md:grid grid-cols-5 gap-3 md:gap-6 items-center">
+      <!-- Image -->
+      <div class="aspect-square w-[90%] md:w-full h-[230px] mx-auto col-span-2">
+        <img [src]="productDetails()?.image" alt="" class="object-contain" />
+      </div>
+
+      <!-- Product Info -->
+      <div class="py-2 px-4 flex flex-col gap-4 col-span-3">
+        <h2 class="capitalize text-2xl font-mono font-semibold">
+          {{ productDetails()?.title }}
+        </h2>
+
+        <p class="capitalize text-xl">{{ productDetails()?.category }}</p>
+
+        <p class="text-stone-500">
+          {{ productDetails()?.description }}
+        </p>
+
+        <p class="text-green-500">{{ productDetails()?.price | currency }}</p>
+
+        <p>
+          {{ productDetails()?.rating?.rate }}
+          <i class="bi bi-star-fill text-yellow-300 text-xl"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+}

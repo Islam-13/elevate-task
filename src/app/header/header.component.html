@@ -1,0 +1,29 @@
+<header class="border-b border-stone-300 bg-yellow-400">
+  <div class="nav__center wrapper flex justify-between items-center gap-6">
+    <a routerLink="/">
+      <h1 class="text-3xl font-semibold uppercase">Elevate Tec.</h1>
+    </a>
+
+    <nav>
+      <ul class="flex gap-5">
+        <li>
+          <a
+            class="text-inherit text-xl font-medium hover:opacity-75 duration-500"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-inherit text-xl font-medium hover:opacity-75 duration-500"
+            routerLink="/products"
+            routerLinkActive="active"
+            >Products</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
